@@ -1,16 +1,71 @@
-<body>
-    <div class="container">
-        <h1>🎰 Fundraiser Casino Tracker 🎰</h1>
-        <h2>Help us hit the jackpot!</h2>
-        <div id="tracker">
-            <div id="progress"></div>
-        </div>
-        <div id="total-points">Total Points: 0</div>
-        <div id="options">
-            <button onclick="addPoints(10)">Option 1 (10 points)</button>
-            <button onclick="addPoints(20)">Option 2 (20 points)</button>
-            <button onclick="addPoints(30)">Option 3 (30 points)</button>
-        </div>
-    </div>
-    <script src="script.js"></script>
-</body>
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #FFC0CB; /* Light Pink background */
+}
+
+.container {
+    text-align: center;
+    color: #8B0000; /* Dark Red text */
+}
+
+h1 {
+    color: #FF0000; /* Red color for main heading */
+    font-size: 3em;
+    text-shadow: 2px 2px #FF69B4; /* Hot Pink shadow */
+}
+
+h2 {
+    color: #FF1493; /* Deep Pink color for subheading */
+    font-size: 2em;
+    text-shadow: 1px 1px #8B0000; /* Dark Red shadow */
+}
+
+#tracker {
+    width: 100%;
+    background-color: #ddd;
+    margin: 20px 0;
+    height: 30px;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 2px solid #FF0000; /* Red border */
+}
+
+#progress {
+    height: 100%;
+    width: 0;
+    background-color: #FF69B4; /* Hot Pink progress bar */
+    transition: width 0.3s;
+}
+
+#options button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #FF1493; /* Deep Pink background for buttons */
+    color: white; /* White text for buttons */
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px #8B0000; /* Dark Red shadow */
+}
+
+#options button:hover {
+    background-color: #FF69B4; /* Hot Pink on hover */
+}
+Save and Push Changes
+Save Your Changes:
+
+Save the updated index.html and styles.css files.
+Commit and Push to GitHub:
+
+Open your terminal or Git Bash.
+Navigate to your project directory.
+Add, commit, and push your changes:
+git add index.html styles.css
+git commit -m "Updated color palette and added casino theme"
+git push origin main
